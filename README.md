@@ -20,7 +20,7 @@ Dieses Repository enthält den optimierten, barrierefreien Quellcode für die La
 
 ### Option A: Forken & Eigenes Hosting (Empfohlen)
 1. Dieses Repository forken.
-2. Die `index.html` auf euren Webspace hochladen oder via GitHub Pages / Vercel direkt mit eurer Domain (z. B. `eligella.de/links`) verknüpfen.
+2. Die `index.html` auf euren Webspace hochladen oder via GitHub Pages / Vercel direkt mit eurer Domain (z. B. `eliasn97.de/links`) verknüpfen.
 3. Die Domain im `data-domain` Attribut des Plausible-Analytics-Skripts im `<head>` anpassen.
 
 ### Option B: Hosting über meine Infrastruktur

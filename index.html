@@ -358,7 +358,13 @@
 				.replace(/^(https?:\/\/)?(www\.)?/, '')
 				.replace(/\/$/, '');
 			
-			redirectText.innerText = `Du wirst zu ${displayUrl} weitergeleitet.`;
+			// Logik zur Anzeige der Weiterleitung im UI
+			if (url.startsWith('mailto:')) {
+				redirectText.innerText = "Du wirst zu deinem Mail Programm weitergeleitet um eine mail an info@eliasn97.de zu schreiben";
+			} else {
+				redirectText.innerText = `Du wirst zu ${displayUrl} weitergeleitet.`;
+			}
+			
 			overlay.classList.remove('hidden');
 		
 			const onConfirm = () => {
@@ -380,7 +386,7 @@
 				window.open(url, '_blank');
 				cleanup();
 			};
-
+		
 			const onCancel = () => {
 				overlay.classList.add('hidden');
 				cleanup();
